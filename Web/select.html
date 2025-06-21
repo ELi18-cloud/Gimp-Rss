@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="icon" href="Resources/gimpRSSLogo2.ico" type="image/png">
+    <title>Gimp RSS</title>
+</head>
+<body>
+    <div class="outsideContainer">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="noisyTransContain">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" preserveAspectRatio="none">
+                <defs>
+                    <filter id="grainy-noise" x="0%" y="0%" width="100%" height="100%">
+                        <feTurbulence type="fractalNoise" baseFrequency="100" numOctaves="1" seed="2" result="noise"/>
+                        <feColorMatrix type="matrix"
+                        values="0 0 0 0 0.55
+                                0 0 0 0 0.83
+                                0 0 0 0 0.56
+                                0 0 0 0.12 0" />
+                    </filter>
+                </defs>
+
+                <rect width="700" height="700" fill="#00000004"/>
+                <rect width="700" height="700" filter="url(#grainy-noise)" />
+            </svg>
+
+            <div class="centerContainer2">
+               <div class="griddy" style="height: 80%;">
+                    <div class="absoluter">
+                        <img src="Resources/News.jpg" alt="" class="img">
+                        <div class="coverHolder">
+                            <p class="name">News</p>
+                            <img src="Resources/check.png" alt="" class="check">
+                        </div>  
+                    </div>
+                    <div class="absoluter">
+                        <img src="Resources/gaming.jpg" alt="" class="img">
+                        <div class="coverHolder">
+                            <p class="name">Gaming</p>
+                            <img src="Resources/check.png" alt="" class="check">
+                        </div>
+                    </div>
+                    <div class="absoluter">
+                        <img src="Resources/lifestyle.jpg" alt="" class="img">
+                        <div class="coverHolder">
+                            <p class="name">Lifestlye</p>
+                            <img src="Resources/check.png" alt="" class="check">
+                        </div>
+                    </div>
+                    <div class="absoluter">
+                        <img src="Resources/podcasts.jpg" alt="" class="img">
+                        <div class="coverHolder">
+                            <p class="name">Podcasts</p>
+                            <img src="Resources/check.png" alt="" class="check">
+                        </div>
+                    </div>
+                    <div class="absoluter">
+                        <img src="Resources/science.jpg" alt="" class="img">
+                        <div class="coverHolder">
+                            <p class="name">Science</p>
+                            <img src="Resources/check.png" alt="" class="check">
+                        </div>
+                    </div>
+                    <div class="absoluter">
+                        <img src="Resources/sports.jpg" alt="" class="img">
+                        <div class="coverHolder">
+                            <p class="name">Sports</p>
+                            <img src="Resources/check.png" alt="" class="check">
+                        </div>
+                    </div>
+                    <div class="absoluter">
+                        <img src="Resources/Technology.jpg" alt="" class="img">
+                        <div class="coverHolder">
+                            <p class="name">Technology</p>
+                            <img src="Resources/check.png" alt="" class="check">
+                        </div>
+                    </div>
+                    <div class="absoluter">
+                        <img src="Resources/buissness.png" alt="" class="img">
+                        <div class="coverHolder">
+                            <p class="name">Business</p>
+                            <img src="Resources/check.png" alt="" class="check">
+                        </div>
+                    </div>
+               </div>
+               <a href="secselect.html" class="continueButton" style="height: 10%; margin-top:none;">Continue</a>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

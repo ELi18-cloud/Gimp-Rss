@@ -1,0 +1,128 @@
+{
+    "News": {
+        "BBC World Report": {
+            "imageLink": "https://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif",
+            "RSSSource": "https://feeds.bbci.co.uk/news/world/rss.xml",
+            "name": "BBC World Report"
+        },
+        "NBC News": {
+            "imageLink": "https://media-cldnry.s-nbcnews.com/image/upload/MSNBC/Components/Media/NBC-promo-graphics/nbc-news.png",
+            "RSSSource": "https://feeds.nbcnews.com/nbcnews/public/news",
+            "name": "NBC News"
+        },
+        "ABC News International": {
+            "imageLink": "https://s.abcnews.com/images/site/abcnews_google_rss_logo.png",
+            "RSSSource": "https://abcnews.go.com/abcnews/internationalheadlines",
+            "name": "ABC News International"
+        },
+        "NYT Word News": {
+            "imageLink": "https://static01.nyt.com/images/misc/NYT_logo_rss_250x40.png",
+            "RSSSource": "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/world/rss.xml",
+            "name": "NYT Word News"
+        },
+        "WP World News": {
+            "imageLink": "https://clipartcraft.com/images/washington-post-logo-policy-center-7.png",
+            "RSSSource": "https://feeds.washingtonpost.com/rss/world?itid=lk_inline_manual_31",
+            "name": "WP World News"
+        }
+    },
+    "Gaming": {
+        "Kotaku": {
+            "imageLink": "https://i.pinimg.com/originals/c3/23/14/c32314c7dfb096b3437325c94c69fca1.jpg",
+            "RSSSource": "https://feeds.bbci.co.uk/news/world/rss.xml",
+            "name": "Kotaku"
+        },
+        "IGN All": {
+            "imageLink": "https://s3.amazonaws.com/o.assets.images.ign.com/kraken/IGN-Logo-RSS.png",
+            "RSSSource": "https://feeds.feedburner.com/ign/all",
+            "name": "IGN All"
+        },
+        "GameSpot": {
+            "imageLink": "https://logodix.com/logo/1813086.png",
+            "RSSSource": "https://www.gamespot.com/feeds/mashup",
+            "name": "GameSpot"
+        },
+        "RPS games": {
+            "imageLink": "Resources/empty.png",
+            "RSSSource": "https://www.rockpapershotgun.com/feed",
+            "name": "RPS games"
+        }
+    },
+    "Lifestlye": {
+        "Buzzfeed Life": {
+            "imageLink": "https://logos-world.net/wp-content/uploads/2022/03/BuzzFeed-Emblem.png",
+            "RSSSource": "https://www.buzzfeed.com/life.xml",
+            "name": "Buzzfeed Life"
+        },
+        "Lifehacker": {
+            "imageLink": "https://vectorseek.com/wp-content/uploads/2023/11/Lifehacker-Logo-Vector.svg-.png",
+            "RSSSource": "https://lifehacker.com/rss",
+            "name": "Lifehacker"
+        }
+    },
+    "Podcasts": {
+        "NPR Hourly News": {
+            "imageLink": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/National_Public_Radio_logo.svg/330px-National_Public_Radio_logo.svg.png",
+            "RSSSource": "https://feeds.npr.org/500005/podcast.xml",
+            "name": "NPR Hourly News"
+        },
+        "The Daily": {
+            "imageLink": "http://is4.mzstatic.com/image/thumb/Music122/v4/1b/83/76/1b8376aa-90a9-eae1-662d-2b24faf1bf6e/source/1200x630bb.jpg",
+            "RSSSource": "https://feeds.simplecast.com/54nAGcIl",
+            "name": "The Daily"
+        }
+    },
+    "Science": {
+        "Science Daily": {
+            "imageLink": "https://stemcell.directory/wp-content/uploads/2018/12/sciencedaily-wide.jpg",
+            "RSSSource": "https://www.sciencedaily.com/rss/all.xml",
+            "name": "Science Daily"
+        },
+        "New Scientist": {
+            "imageLink": "https://seeklogo.com/images/N/new-scientist-logo-DCCD4EAE48-seeklogo.com.png",
+            "RSSSource": "https://www.newscientist.com/feed/home",
+            "name": "New Scientist"
+        }
+    },
+    "Sports": {
+        "ESPN Top Headlines": {
+            "imageLink": "https://static.vecteezy.com/system/resources/previews/024/693/556/large_2x/espn-logo-transparent-free-png.png",
+            "RSSSource": "https://www.espn.com/espn/rss/news",
+            "name": "ESPN Top Headlines"
+        },
+        "CBS Sports": {
+            "imageLink": "https://logos-world.net/wp-content/uploads/2020/09/CBS-Logo.jpg",
+            "RSSSource": "https://www.cbssports.com/rss/headlines/",
+            "name": "CBS Sports"
+        }
+    },
+    "Technology": {
+        "The Verge": {
+            "imageLink": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fworkingdesignstud.io%2Fwp-content%2Fuploads%2F2018%2F05%2Fthe-verge-logo-730x410.png&f=1&nofb=1&ipt=a970aa087f86d065416f3285dc1ba2a507b145e4f990dfa9da480ad1d70ebc6b",
+            "RSSSource": "https://www.theverge.com/rss/index.xml",
+            "name": "The Verge"
+        },
+        "Wired": {
+            "imageLink": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.nqNQTshwVMqzXGIUCOtPOQHaBg%26r%3D0%26pid%3DApi&f=1&ipt=6b671c0bd40fe3ad624f530cf22935a61262e39a62bc63dd38241b0063e3bb61",
+            "RSSSource": "https://www.wired.com/feed/rss",
+            "name": "Wired"
+        }
+    },
+    "Business": {
+        "Harvard Buisness": {
+            "imageLink": "https://www.visa.com/images/merchantoffers/2022-11/1669789210938.hbr.png",
+            "RSSSource": "http://feeds.hbr.org/harvardbusiness",
+            "name": "Harvard Buisness"
+        },
+        "Entrepreneur": {
+            "imageLink": "https://assets.entrepreneur.com/static/20210208112149-ENT-logo-blk.png",
+            "RSSSource": "https://www.entrepreneur.com/latest.rss",
+            "name": "Entrepreneur"
+        },
+        "Fast Company": {
+            "imageLink": "https://www.fastcompany.com/asset_files/static/logos/fastcompany/fc-fb-icon_big.png",
+            "RSSSource": "https://www.fastcompany.com/latest/rss",
+            "name": "Fast Company"
+        }
+    }
+}

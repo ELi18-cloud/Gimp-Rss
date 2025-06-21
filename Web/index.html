@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="icon" href="Resources/gimpRSSLogo2.ico" type="image/png">
+    <title>Gimp RSS</title>
+</head>
+<body>
+    <div class="outsideContainer">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="heroContainer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" preserveAspectRatio="none">
+                <defs>
+                    <filter id="grainy-noise" x="0%" y="0%" width="100%" height="100%">
+                        <feTurbulence type="fractalNoise" baseFrequency="100" numOctaves="1" seed="2" result="noise"/>
+                        <feColorMatrix type="matrix"
+                        values="0 0 0 0 0.55
+                                0 0 0 0 0.83
+                                0 0 0 0 0.56
+                                0 0 0 0.12 0" />
+                    </filter>
+                </defs>
+
+                <rect width="700" height="700" fill="#00000004"/>
+                <rect width="700" height="700" filter="url(#grainy-noise)" />
+            </svg>
+
+            <div class="centerContainer">
+                <h1>Gimp RSS</h1>
+                <a href="preselect.html" class="continueButton">Join Today</a>
+            </div>
+        </div>
+    </div>
+    <script src="start.js"></script>
+</body>
+</html>

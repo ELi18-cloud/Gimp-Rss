@@ -1,0 +1,26 @@
+{
+    "BBC World Report": {
+        "RSSSource": "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "name": "BBC World Report"
+    },
+    "NBC News": {
+        "RSSSource": "https://feeds.nbcnews.com/nbcnews/public/news",
+        "name": "NBC News"
+    },
+    "ABC News International": {
+        "RSSSource": "https://abcnews.go.com/abcnews/internationalheadlines",
+        "name": "ABC News International"
+    },
+    "NPR Hourly News": {
+        "RSSSource": "https://feeds.npr.org/500005/podcast.xml",
+        "name": "NPR Hourly News"
+    },
+    "The Daily": {
+        "RSSSource": "https://feeds.simplecast.com/54nAGcIl",
+        "name": "The Daily"
+    },
+    "Science Daily": {
+        "RSSSource": "https://www.sciencedaily.com/rss/all.xml",
+        "name": "Science Daily"
+    }
+}
