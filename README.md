@@ -30,7 +30,7 @@ Gimp RSS is a modern, user-friendly RSS reader designed for both quick, simple s
 
 Getting started with Gimp RSS is straightforward:
 
-1.  **Download the latest executable:** [https://github.com/ELi18-cloud/Gimp-Rss]
+1.  **Download the latest executable:** https://github.com/ELi18-cloud/Gimp-Rss/releases/tag/v1.0.0
 2.  **Run the program:** Double-click the downloaded `GimpRSS.exe` file.
 
 No additional setup or configuration is required to begin using the basic features.
