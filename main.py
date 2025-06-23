@@ -5,17 +5,23 @@ import feedparser
 import webbrowser
 from datetime import datetime
 from bs4 import BeautifulSoup
+import webview
+import time
 # Initialize the web folder
 import os
 import sys
-
+import subprocess
 # This ensures the right path whether running normally or from PyInstaller
 if getattr(sys, 'frozen', False):
     base_path = sys._MEIPASS  # For PyInstaller
     write_base = os.path.dirname(sys.executable)
+    subprocess.Popen([ "appview.exe", "http://localhost:8080"])
+    unCompiled = False
 else:
     base_path = os.path.dirname(__file__)
     write_base = os.path.dirname(__file__)
+    subprocess.Popen(["python", "appview.py", "http://localhost:8080"])
+    unCompiled = True
     
 #this stores the location of the web folder for eel initialization
 web_dir = os.path.join(base_path,'web')
@@ -112,8 +118,8 @@ def getRss(name):
         # Use a User-Agent header to avoid being blocked
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                      "AppleWebKit/537.36 (KHTML, like Gecko) "
-                      "Chrome/114.0.0.0 Safari/537.36"
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/114.0.0.0 Safari/537.36"
     }
     print(link)
     rsslist = []
@@ -169,7 +175,11 @@ def getRss(name):
 #this just opens the link for an article in a new tab in a webbroser because if we open in the app it crashes the program
 @eel.expose
 def openLink(link):
-    webbrowser.open(link)
+    if unCompiled == True:
+        subprocess.Popen(["python", "appview.py", link,'--onTop'])
+    else:
+        subprocess.Popen([ "appview.exe", link, '--onTop'])
+        
 #This is what checks if the user has already gone through the set up process
 @eel.expose
 def checkKnown():
@@ -208,6 +218,6 @@ def deleteFeed(name):
     if formattedName in rssfeeds:
         del rssfeeds[formattedName]
     with open(rssFeedsPath, 'w') as file:
-        json.dump(rssfeeds, file, indent=4)
+        json.dump(rssfeeds, file, indent=4)     
+eel.start('index.html',mode=None, port=8080)
 
-eel.start('index.html')

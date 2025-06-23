@@ -237,6 +237,10 @@ h1{
     z-index: 100;
     overflow-y: auto;
     overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
 }
 .rssItem{
     position: relative;
@@ -291,9 +295,9 @@ h1{
     height: 32px;
     justify-content: center;
     align-items: center;
-    margin-top: 5px;
     margin-left: 1%;
     background-color: #1e1e1e;
+    margin-top: 5px;
     text-decoration: none;
     border-radius: 10px;
     border: none;
@@ -301,19 +305,27 @@ h1{
 }
 .gotoRSS:hover{
     background-color: #7dff8155;
+    transform: scale(1.05);
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .align{
     margin-left: 16vw;
 }
 .darkText{
-    color: #161616;
     border-radius: 10px;
 }
 #name{
     border: solid 3px #161616;
+    height: 32px;
+    font-size: 28px;
+    background-color: #1e1e1e;
 }
 #link{
     border: none;
+    height: 32px;
+    font-size: 28px;
+    background-color: #1e1e1e;
 }
 .feedManCont{
     position: relative;
@@ -333,6 +345,11 @@ h1{
     margin-top: 12.5px;
     border: none;
     border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.deleter:hover{
+    background-color: #ff0000;
+    transform: scale(1.05);
 }
 .absoDe{
     position: absolute;
