@@ -5,10 +5,12 @@ import feedparser
 import webbrowser
 from datetime import datetime
 from bs4 import BeautifulSoup
+import webview
+import time
 # Initialize the web folder
 import os
 import sys
-
+import subprocess
 # This ensures the right path whether running normally or from PyInstaller
 if getattr(sys, 'frozen', False):
     base_path = sys._MEIPASS  # For PyInstaller
@@ -16,6 +18,7 @@ if getattr(sys, 'frozen', False):
 else:
     base_path = os.path.dirname(__file__)
     write_base = os.path.dirname(__file__)
+    subprocess.Popen(["python", "appview.py", "http://localhost:8080"])
     
 #this stores the location of the web folder for eel initialization
 web_dir = os.path.join(base_path,'web')
@@ -112,8 +115,8 @@ def getRss(name):
         # Use a User-Agent header to avoid being blocked
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                      "AppleWebKit/537.36 (KHTML, like Gecko) "
-                      "Chrome/114.0.0.0 Safari/537.36"
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/114.0.0.0 Safari/537.36"
     }
     print(link)
     rsslist = []
@@ -208,6 +211,6 @@ def deleteFeed(name):
     if formattedName in rssfeeds:
         del rssfeeds[formattedName]
     with open(rssFeedsPath, 'w') as file:
-        json.dump(rssfeeds, file, indent=4)
+        json.dump(rssfeeds, file, indent=4)     
+eel.start('index.html',mode=None, port=8080)
 
-eel.start('index.html')
