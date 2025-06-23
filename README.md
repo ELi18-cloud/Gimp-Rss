@@ -19,7 +19,6 @@ Gimp RSS is a modern, user-friendly RSS reader designed for both quick, simple s
 * **Flexible Setup:** Get started quickly with minimal configuration, or dive into advanced settings for a personalized experience.
 * **Feed Management:** Easily add and delete RSS feeds directly within the application.
 * **Integrated Web View:** Quickly jump to the full article on its original website.
-* **Cross-Browser Compatibility:** Defaults to Chrome, gracefully falling back to your system's default browser if Chrome is not found.
 
 ## Requirements
 
