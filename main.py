@@ -15,10 +15,13 @@ import subprocess
 if getattr(sys, 'frozen', False):
     base_path = sys._MEIPASS  # For PyInstaller
     write_base = os.path.dirname(sys.executable)
+    subprocess.Popen([ "appview.exe", "http://localhost:8080"])
+    unCompiled = False
 else:
     base_path = os.path.dirname(__file__)
     write_base = os.path.dirname(__file__)
     subprocess.Popen(["python", "appview.py", "http://localhost:8080"])
+    unCompiled = True
     
 #this stores the location of the web folder for eel initialization
 web_dir = os.path.join(base_path,'web')
@@ -172,7 +175,11 @@ def getRss(name):
 #this just opens the link for an article in a new tab in a webbroser because if we open in the app it crashes the program
 @eel.expose
 def openLink(link):
-    webbrowser.open(link)
+    if unCompiled == True:
+        subprocess.Popen(["python", "appview.py", link,'--onTop'])
+    else:
+        subprocess.Popen([ "appview.exe", link, '--onTop'])
+        
 #This is what checks if the user has already gone through the set up process
 @eel.expose
 def checkKnown():
